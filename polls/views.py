@@ -11,7 +11,7 @@ def index(request):
     return render(request, 'polls/index.html', context)
 
 def test(request):
-    return HttpResponse("Hello, world. You're at the test index777.")
+    return HttpResponse("Hello, world. You're at the test index1777.")
 
 def detail(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
